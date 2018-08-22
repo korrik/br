@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Наше пиво</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+    <header id="main">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top main-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#"><img src="assets/img/logo.svg" alt="" sizes="" srcset=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#products">Продукция</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#factory">Пивоварня</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Эксукурсии</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="phone">
+                        <span class="bold">+7 999 864 21 21</span>
+                        <span>test@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="intro">
+            <div class="container-fluid">
+
+                <div class="d-flex align-items-center" style="height: 75vh">
+
+                    <div class="row" style="width: 100%">
+                        <div class="col-4">
+                            <h1 class="bold">
+                                Небольшой <br> заголовок
+                            </h1>
+                            <h4 class="mt-4">
+                                Где говорится, какое вкусное пиво,<br> и как его варят с любовью
+                            </h4>
+                        </div>
+                        <div class="col-4">
+                            <div class="circles">
+
+                                <div class="circle d-none d-sm-block">
+                                    <img class="product-img" src="assets/img/beer_bottle.png" alt="">
+                                </div>
+                                <div class="circle circle-2x d-none d-sm-block"></div>
+                                <div class="circle circle-3x d-none d-sm-block"></div>
+                                
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-4">
+
+                            <h2 class="bold"> Темное, 0.5 </h2>
+                            <h4 class="mt-1" style="text-decoration: underline">Узнать о производстве</h4>
+
+                            <div class="controls mt-5">
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <i class="fas fa-chevron-left"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-baseline justify-content-center">
+                    <div class="row" style="width: 100%;">
+                        <div class="col-4">
+                            <ol class="carousel-indicators text-left">
+                                <li class="active"><span class="bold">1</span></li>
+                                <li><span class="bold">2</span></li>
+                                <li><span class="bold">3</span></li>
+                            </ol>
+                        </div>
+
+                        <div class="col-4 text-center">
+                            <a class="bold more">
+                                <p class="bold">Подробнее</p>
+                                <i class="fas fa-arrow-down"></i>
+                            </a>
+
+                        </div>
+                        <div class="col-4">
+                            <div class="card" style="margin-top: -200px; margin-left: -20px;">
+                                <div class="card-body">
+                                    <h4 class="card-title bold">Текст тематики голосования</h4>
+                                    <p class="card-text">
+                                        <div class="custom-controls-stacked">
+                                            <label class="custom-control custom-radio">
+                                                <input name="custom-radio-3" type="radio" class="custom-control-input" checked="">
+                                                <span class="custom-control-label">Раз</span>
+                                            </label>
+                                            <label class="custom-control custom-radio">
+                                                <input name="custom-radio-3" type="radio" class="custom-control-input">
+                                                <span class="custom-control-label">Два</span>
+                                            </label>
+                                            <label class="custom-control custom-radio">
+                                                <input name="custom-radio-3" type="radio" class="custom-control-input">
+                                                <span class="custom-control-label">Три</span>
+                                            </label>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    
+    </header>
+
+    <img src="assets/img/Layer.png" class="background-wave wave-bottom">
+
+    <section id="products">
+        <div class="container-fluid">
+            <div class="section-title mb-5">
+                <div class="icon mx-auto">
+                    <img src="assets/img/production_icon.svg" alt="">
+                </div>
+                <h1 class="bold">Продукция</h1>
+            </div>
+
+            <ul class="nav nav-pills mb-3 mx-auto" id="pills-tab" role="tablist">
+                <li class="nav-item text-left">
+                    <a class="nav-link bold active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Наше пиво</a>
+                </li>
+                <li class="nav-item">
+                    <a style="margin-left: -10px" class="nav-link bold" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                        aria-controls="pills-profile" aria-selected="false">Добровар</a>
+                </li>
+                <li class="nav-item text-right">
+                    <a class="nav-link bold" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Наш квас</a>
+                </li>
+            </ul>
+
+            <div class="tab-content mx-auto" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="assets/img/beer_light.png" alt="" style="max-height: 500px;">
+                        </div>
+                        <div class="col-9">
+                            <ul class="product-tabs">
+                                <li class="bold active">Классическое</li>
+                                <li class="bold">Легкое</li>
+                                <li class="bold">Премиум</li>
+                                <li class="bold">Темное</li>
+                            </ul>
+
+                            <div class="product-description">
+                                <p class="bold">Состав</p>
+                                <p>Вода, сода</p>
+                            </div>
+
+
+                            <div class="product-description">
+                                <p class="bold">Пищевая ценность</p>
+                                <p>Не более 42 ккал</p>
+                            </div>
+                            <div class="product-description">
+                                <p class="bold">Содержимое этилового спирта</p>
+                                <p>4,0 в 100 мл продукта</p>
+                            </div>
+                            <div class="product-description">
+                                <p class="bold">Условия хранения</p>
+                                <p>Хранить при +2</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Два</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Три</div>
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+    <section id="factory">
+        <img src="assets/img/layer-top.png" alt="" class="background-wave wave-bottom">
+        <div class="part-1">
+            <div class="container">
+                <div class="section-title">
+                    <div class="icon mx-auto">
+                        <img src="assets/img/boiling.svg">
+                    </div>
+                
+                    <h1 class="bold">Пивоварня</h1>
+                </div>
+                    <div class="video-area mx-auto">
+                        <div class="video-box">
+    
+                        </div>
+                        <div class="text-area">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="text-left">
+                                        Пивововаренная компания «Наше Пиво» начала свою деятельность в 2016 году и вышла на рынок Приднестровской Молдавской республики
+                                        с продукцией под собственной торговой маркой. В 2014 году был заложен первый кирпич в
+                                        строительстве пивоварни, и уже к январю 2016 года, цех был сдан в эксплуатацию.
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-left">
+                                        За 4 месяца были запущенны и откеалиброваны все этапы производства, разработаны и введены в производство первых 3 рецепта
+                                        торговой марки "Наше пиво". Пивоваренная Компания Наше Пиво — это активно развивающееся
+                                        производственное предприятие с современным оборудованием и сплоченным коллективом.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+        <img src="assets/img/Layer.png" class="background-wave wave-bottom">
+    
+        <div class="image-slider-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h2>Многое изменилось в работе предприятия за пару лет, но неизменными остаются наши принципы:</h2>
+                        <div class="row mt-5">
+                            <div class="col-2">
+                                <div class="icon mx-auto">
+                                    <img src="assets/img/boiling.svg">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <span>Мы варим с любовью, не пастеризуем и не добавляем химию в наши продукты</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="icon mx-auto">
+                                    <img src="assets/img/boiling.svg">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <span>Мы варим с любовью, не пастеризуем и не добавляем химию в наши продукты</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="icon mx-auto">
+                                    <img src="assets/img/boiling.svg">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <span>Мы варим с любовью, не пастеризуем и не добавляем химию в наши продукты</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div id="carousel1" class="carousel slide show-carousel" data-ride="carousel" style="height: 350px;">
+                            <div class="carousel-inner">
+                                <div class="carousel-item text-center active">
+                                    <img class="" src="assets/img/production.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <img class="" src="assets/img/production.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <img class="" src="assets/img/production.jpg" alt="Third slide">
+                                </div>
+                            </div>
+                            <div class="carousel-control">
+                                <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                                    <i class="fas fa-chevron-left"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                    
+                                <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <div class="container">
+                <h1 class="bold">Оборудование</h1>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>Ведущие оборудования для розлива, такие как италь</p>
+                                </div>
+                                <div class="col-4"></div>
+                                <div class="col-8"></div>
+                            </div>
+                            
+
+                        </div>
+                        <div class="col-6">
+                            <div id="carousel2" class="carousel slide show-carousel" data-ride="carousel" style="height: 350px;">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item text-center active">
+                                        <img class="" src="assets/img/production.jpg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item text-center">
+                                        <img class="" src="assets/img/production.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item text-center">
+                                        <img class="" src="assets/img/production.jpg" alt="Third slide">
+                                    </div>
+                                </div>
+                                <div class="carousel-control">
+                                    <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+                                        <i class="fas fa-chevron-left"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                        
+                                    <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    
+    </section>
+    
+    <section id="excursions">
+        <img src="assets/img/layer-top.png" alt="" class="background-wave wave-bottom">
+        <div class="part-1 pt-5 pb-5">
+            <div class="container">
+                <div class="section-title mb-5">
+                    <div class="icon mx-auto">
+                        <img src="assets/img/production_icon.svg" alt="">
+                    </div>
+                    <h1 class="bold">Продукция</h1>
+                </div>
+            <div class="row">
+                <div class="col-6">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem dolorum adipisci facilis tenetur consectetur? Nobis minus delectus quisquam beatae, soluta et ut necessitatibus placeat veniam quidem aliquid quasi rerum reiciendis.
+
+                </div>
+                <div class="col-6">
+                        <div id="carousel3" class="carousel slide show-carousel" data-ride="carousel" style="height: 350px;">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item text-center active">
+                                        <img class="" src="assets/img/production.jpg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item text-center">
+                                        <img class="" src="assets/img/production.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item text-center">
+                                        <img class="" src="assets/img/production.jpg" alt="Third slide">
+                                    </div>
+                                </div>
+                                <div class="carousel-control">
+                                    <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
+                                        <i class="fas fa-chevron-left"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                        
+                                    <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                        
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="assets/img/Layer.png" class="background-wave wave-bottom">
+    </section>
+
+    <section id="contacts">
+        <div class="container">
+            <div class="section-title mb-5">
+                <h1 class="bold">Контакты</h1>
+            </div>
+            <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+            <img src="assets/img/layer-top.png" alt="" class="background-wave wave-bottom">
+            <div class="footer">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12"></div>
+        </div>
+
+        <div class="row">
+                <div class="col-12">
+                    <p class="bold">ООО "Шериф"</p>
+                </div>
+        </div>
+    </div>
+</div>
+    </footer>
+
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/app.min.js"></script>
+</body>
+
+</html>
