@@ -76,11 +76,13 @@ section {
   border: 0; }
 
 .background-wave {
-  height: 350px;
-  max-width: 100%;
-  background-repeat-y: no-repeat;
-  background-repeat: repeat-x;
+  height: 390px;
+  width: 100%;
   background-size: cover; }
+  .background-wave.wave-bottom {
+    background-image: url("../img/Layer.png"); }
+  .background-wave.wave-top {
+    background-image: url("../img/layer-top.png"); }
 
 @media (min-width: 1200px) {
   .container-fluid {
@@ -219,7 +221,7 @@ section {
     font-size: 14px; }
 
 #products {
-  margin-top: -90px;
+  margin-top: -310px;
   min-height: 500px; }
   #products .nav {
     max-width: 1200px;
@@ -259,10 +261,14 @@ section {
   #products .product-description p {
     margin-bottom: 0.5rem !important; }
 
-#factory {
+.factory {
   margin-top: -90px;
   padding-bottom: 90px;
-  min-height: 500px; }
+  min-height: 500px;
+  background: #febe11; }
+
+#factory {
+  padding-top: 75px; }
 
 .video-area {
   max-width: 1200px; }
@@ -303,3 +309,22 @@ section {
 .footer {
   background: #febe11;
   text-align: center; }
+
+.equipment {
+  margin-top: 75px; }
+  .equipment table {
+    width: 100%; }
+    .equipment table tr td {
+      padding: 5px 0; }
+      .equipment table tr td:first-child {
+        width: 30%; }
+
+#contacts table {
+  width: 100%; }
+  #contacts table tr td {
+    padding: 10px 0; }
+    #contacts table tr td:first-child {
+      width: 30%; }
+
+.3d-excursion {
+  margin-top: -320px; }

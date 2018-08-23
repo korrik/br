@@ -88,18 +88,16 @@ section {
 
 
 .background-wave {
-    height: 350px;
-    max-width: 100%;
-    background-repeat-y: no-repeat;
-    background-repeat: repeat-x;
+    height: 390px;
+    width: 100%;
     background-size: cover;
 
     &.wave-bottom {
-        // background-image: url('../img/Layer.png');
+        background-image: url('../img/Layer.png');
     }
 
     &.wave-top {
-        // background-image: url('../img/layer-top.png')
+        background-image: url('../img/layer-top.png')
     }
     
 }
@@ -321,7 +319,7 @@ section {
 
 
 #products {
-    margin-top: -90px;
+    margin-top: -310px;
     min-height: 500px;
 
     .nav {
@@ -390,10 +388,15 @@ section {
 }
 
 
-#factory {
+.factory {
     margin-top: -90px;
     padding-bottom: 90px;
     min-height: 500px;
+    background: $orange-color;
+}
+
+#factory {
+    padding-top: 75px;
 }
 
 
@@ -454,4 +457,43 @@ section {
 .footer {
     background: $orange-color;
     text-align: center;
+}
+
+.equipment {
+    margin-top: 75px;
+
+    table {
+        width: 100%;
+
+        tr {
+            td {
+                padding: 5px 0;
+
+                &:first-child {
+                    width: 30%
+                }
+            }
+        }
+    }
+}
+
+#contacts {
+    table {
+        width: 100%;
+
+        tr {
+            td {
+                padding: 10px 0;
+
+                &:first-child {
+                    width: 30%
+                }
+            }
+        }
+    }
+}
+
+.3d-excursion {
+    margin-top: -320px;
+    
 }
