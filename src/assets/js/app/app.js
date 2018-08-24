@@ -14,6 +14,10 @@ $('a[href*="#"]')
 .not('[href="#carousel1"]')
 .not('[href="#carousel2"]')
 .not('[href="#carousel3"]')
+.not('[href="#pills-home"]')
+.not('[href="#pills-profile"]')
+.not('[href="#pills-contact"]')
+.not('[href="#product-carousel"]')
 
 .click(function (event) {
   // On-page links

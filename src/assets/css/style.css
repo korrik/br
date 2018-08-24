@@ -78,6 +78,17 @@ section {
   border-radius: 10px;
   border: 0; }
 
+#product-carousel.carousel {
+  position: unset;
+  width: 100%; }
+
+#product-carousel .carousel-inner {
+  position: unset;
+  width: unset;
+  overflow: unset; }
+  #product-carousel .carousel-inner .carousel-item img {
+    margin-top: 15px; }
+
 .background-wave {
   height: 350px;
   width: 100%;
@@ -102,16 +113,11 @@ section {
     font-size: 22px;
     position: relative;
     z-index: 1; }
-  #main .intro .circles {
-    overflow: hidden;
-    margin-top: -300px;
-    margin-left: -150px; }
-    #main .intro .circles .product-img {
-      height: 420px;
-      position: absolute;
-      top: 230px;
-      left: 50%;
-      transform: translate(-50%, -50%); }
+  #main .intro .circles .product-img {
+    height: 420px;
+    top: 230px;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   #main .intro .circle {
     background-color: #ffffff;
     border-radius: 50%;
@@ -146,6 +152,8 @@ section {
     #main .intro .controls .carousel-control-next i {
       font-size: 42px; }
   #main .intro .more {
+    color: #2e2e2e;
+    text-decoration: none;
     cursor: pointer; }
     #main .intro .more p {
       font-size: 22px;

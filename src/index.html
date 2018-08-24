@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -21,7 +20,9 @@
     <header id="main">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top main-nav">
             <div class="container-fluid">
-                <a class="navbar-brand logo" href="#"><img src="assets/img/logo.svg" alt="" sizes="" srcset=""></a>
+                <a class="navbar-brand logo" href="#">
+                    <img src="assets/img/logo.svg" alt="" sizes="" srcset="">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -54,48 +55,68 @@
             <div class="container-fluid">
 
                 <div class="d-flex align-items-center" style="height: 75vh">
+                    <div id="product-carousel" class="carousel slide" data-ride="carousel">
 
-                    <div class="row" style="width: 100%">
-                        <div class="col-4">
-                            <h1 class="bold">
-                                Небольшой <br> заголовок
-                            </h1>
-                            <h4 class="mt-4">
-                                Где говорится, какое вкусное пиво,<br> и как его варят с любовью
-                            </h4>
-                        </div>
-                        <div class="col-4">
-                            <div class="circles">
+                        <div class="row" style="width: 100%">
+                            <div class="col-4">
+                                <h1 class="bold">Небольшой
+                                    <br>заголовок </h1>
+                                <h4 class="mt-4">Где говорится, какое вкусное пиво,
+                                    <br>и как его варят с любовью</h4>
+                            </div>
+                            <div class="col-4">
+                                <div class="circles">
 
-                                <div class="circle d-none d-sm-block">
-                                    <img class="product-img" src="assets/img/beer_bottle.png" alt="">
+                                    <div class="circle d-none d-sm-block">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block mx-auto" src="assets/img/beer_bottle.png" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block mx-auto" src="assets/img/beer_bottle.png" alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block mx-auto" src="assets/img/beer_bottle.png" alt="Third slide">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="circle circle-2x d-none d-sm-block"></div>
+                                    <div class="circle circle-3x d-none d-sm-block"></div>
+
                                 </div>
-                                <div class="circle circle-2x d-none d-sm-block"></div>
-                                <div class="circle circle-3x d-none d-sm-block"></div>
-                                
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-4">
-
-                            <h2 class="bold"> Темное, 0.5 </h2>
-                            <h4 class="mt-1" style="text-decoration: underline">Узнать о производстве</h4>
-
-                            <div class="controls mt-5">
-                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                    <i class="fas fa-chevron-left"></i>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-
-                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                    <i class="fas fa-chevron-right"></i>
-                                    <span class="sr-only">Next</span>
-                                </a>
                             </div>
 
+                            <div class="col-4">
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h2 class="bold"> Темное, 0.5 </h2>
+                                        <h4 class="mt-1" style="text-decoration: underline">Узнать о производстве</h4>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="controls mt-5">
+                                            <a class="carousel-control-prev" href="#product-carousel" role="button" data-slide="prev">
+                                                <i class="fas fa-chevron-left"></i>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+
+                                            <a class="carousel-control-next" href="#product-carousel" role="button" data-slide="next">
+                                                <i class="fas fa-chevron-right"></i>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
+
 
                     </div>
                 </div>
@@ -104,14 +125,20 @@
                     <div class="row" style="width: 100%;">
                         <div class="col-4">
                             <ol class="carousel-indicators text-left">
-                                <li class="active"><span class="bold">1</span></li>
-                                <li><span class="bold">2</span></li>
-                                <li><span class="bold">3</span></li>
+                                <li class="active">
+                                    <span class="bold">1</span>
+                                </li>
+                                <li>
+                                    <span class="bold">2</span>
+                                </li>
+                                <li>
+                                    <span class="bold">3</span>
+                                </li>
                             </ol>
                         </div>
 
                         <div class="col-4 text-center">
-                            <a class="bold more">
+                            <a href="#products" class="bold more">
                                 <p class="bold">Подробнее</p>
                                 <i class="fas fa-arrow-down"></i>
                             </a>
@@ -145,8 +172,8 @@
                 </div>
             </div>
         </div>
-        
-    
+
+
     </header>
 
     <div class="background-wave wave-bottom"></div>
@@ -186,7 +213,7 @@
                                 <li class="bold active">
                                     <span class="bold">
                                         Классическое
-                                    </span>    
+                                    </span>
                                 </li>
                                 <li class="bold">Легкое</li>
                                 <li class="bold">Премиум</li>
@@ -223,48 +250,48 @@
 
     </section>
 
-    
+
     <div class="background-wave wave-top"></div>
     <section id="factory">
-        
+
         <div class="factory" class="part-1">
             <div class="container">
                 <div class="section-title">
                     <div class="icon mx-auto">
                         <img src="assets/img/boiling.svg">
                     </div>
-                
+
                     <h1 class="bold">Пивоварня</h1>
                 </div>
-                    <div class="video-area mx-auto">
-                        <div class="video-box">
-    
-                        </div>
-                        <div class="text-area">
-                            <div class="row">
-                                <div class="col-6">
-                                    <p class="text-left">
-                                        Пивововаренная компания «Наше Пиво» начала свою деятельность в 2016 году и вышла на рынок Приднестровской Молдавской республики
-                                        с продукцией под собственной торговой маркой. В 2014 году был заложен первый кирпич в
-                                        строительстве пивоварни, и уже к январю 2016 года, цех был сдан в эксплуатацию.
-                                    </p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="text-left">
-                                        За 4 месяца были запущенны и откеалиброваны все этапы производства, разработаны и введены в производство первых 3 рецепта
-                                        торговой марки "Наше пиво". Пивоваренная Компания Наше Пиво — это активно развивающееся
-                                        производственное предприятие с современным оборудованием и сплоченным коллективом.
-                                    </p>
-                                </div>
+                <div class="video-area mx-auto">
+                    <div class="video-box">
+
+                    </div>
+                    <div class="text-area">
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="text-left">
+                                    Пивововаренная компания «Наше Пиво» начала свою деятельность в 2016 году и вышла на рынок Приднестровской Молдавской республики
+                                    с продукцией под собственной торговой маркой. В 2014 году был заложен первый кирпич в
+                                    строительстве пивоварни, и уже к январю 2016 года, цех был сдан в эксплуатацию.
+                                </p>
+                            </div>
+                            <div class="col-6">
+                                <p class="text-left">
+                                    За 4 месяца были запущенны и откеалиброваны все этапы производства, разработаны и введены в производство первых 3 рецепта
+                                    торговой марки "Наше пиво". Пивоваренная Компания Наше Пиво — это активно развивающееся
+                                    производственное предприятие с современным оборудованием и сплоченным коллективом.
+                                </p>
                             </div>
                         </div>
                     </div>
-    
                 </div>
+
             </div>
-    
+        </div>
+
         <div class="background-wave wave-bottom"></div>
-    
+
         <div class="image-slider-area">
             <div class="container">
                 <div class="row">
@@ -319,12 +346,12 @@
                                     <i class="fas fa-chevron-left"></i>
                                     <span class="sr-only">Previous</span>
                                 </a>
-                    
+
                                 <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
                                     <i class="fas fa-chevron-right"></i>
                                     <span class="sr-only">Next</span>
                                 </a>
-                    
+
                             </div>
                         </div>
                     </div>
@@ -335,85 +362,118 @@
         <div class="equipment text-center">
             <div class="container">
                 <h1 class="bold mb-5">Оборудование</h1>
-                    <div class="row">
-                        <div class="col-6 text-left">
-                            <p>Ведущие производители оборудования для розлива, такие как итальянская компания AVE TECHNOLOGIES, учитывают все особенности
-                                процесса розлива пива. Предлагаемые машины представляют собой совершенные автоматизированные линии, пригодные для
-                                розлива не только пива,но и других алкогольных напитков в стеклянную тару и бутылки ПЭТ.</p>
+                <div class="row">
+                    <div class="col-6 text-left">
+                        <p>Ведущие производители оборудования для розлива, такие как итальянская компания AVE TECHNOLOGIES,
+                            учитывают все особенности процесса розлива пива. Предлагаемые машины представляют собой совершенные
+                            автоматизированные линии, пригодные для розлива не только пива,но и других алкогольных напитков
+                            в стеклянную тару и бутылки ПЭТ.</p>
 
-                            <table>
-                                <tr>
-                                    <td><span class="bold">Della Toffola</span></td>
-                                    <td><span>Знаменитая итальянская компания</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span class="bold">SIAPI</span></td>
-                                    <td><span>Итальянская выдувная машина</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span class="bold">PSS</span></td>
-                                    <td><span>Словацкое варочное оборудование</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span class="bold">SIAD</span></td>
-                                    <td><span>Итальянский компрессор 40 бар</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span class="bold">Ceccato</span></td>
-                                    <td><span>Итальянский компрессор 8 бар</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span></span></td>
-                                    <td><span></span></td>
-                                </tr>
-                                <tr>
-                                    <td><span></span></td>
-                                    <td><span></span></td>
-                                </tr>
-                                <tr>
-                                    <td><span></span></td>
-                                    <td><span></span></td>
-                                </tr>
-                            </table>
-                        </div>
-                            
+                        <table>
+                            <tr>
+                                <td>
+                                    <span class="bold">Della Toffola</span>
+                                </td>
+                                <td>
+                                    <span>Знаменитая итальянская компания</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="bold">SIAPI</span>
+                                </td>
+                                <td>
+                                    <span>Итальянская выдувная машина</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="bold">PSS</span>
+                                </td>
+                                <td>
+                                    <span>Словацкое варочное оборудование</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="bold">SIAD</span>
+                                </td>
+                                <td>
+                                    <span>Итальянский компрессор 40 бар</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="bold">Ceccato</span>
+                                </td>
+                                <td>
+                                    <span>Итальянский компрессор 8 бар</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span></span>
+                                </td>
+                                <td>
+                                    <span></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span></span>
+                                </td>
+                                <td>
+                                    <span></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span></span>
+                                </td>
+                                <td>
+                                    <span></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
 
-                        
-                        <div class="col-6">
-                            <div id="carousel2" class="carousel slide show-carousel" data-ride="carousel" style="height: 350px;">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item text-center active">
-                                        <img class="" src="assets/img/production.jpg" alt="First slide">
-                                    </div>
-                                    <div class="carousel-item text-center">
-                                        <img class="" src="assets/img/production.jpg" alt="Second slide">
-                                    </div>
-                                    <div class="carousel-item text-center">
-                                        <img class="" src="assets/img/production.jpg" alt="Third slide">
-                                    </div>
+
+
+                    <div class="col-6">
+                        <div id="carousel2" class="carousel slide show-carousel" data-ride="carousel" style="height: 350px;">
+                            <div class="carousel-inner">
+                                <div class="carousel-item text-center active">
+                                    <img class="" src="assets/img/production.jpg" alt="First slide">
                                 </div>
-                                <div class="carousel-control">
-                                    <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
-                                        <i class="fas fa-chevron-left"></i>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                        
-                                    <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
-                                        <i class="fas fa-chevron-right"></i>
-                                        <span class="sr-only">Next</span>
-                                    </a>
+                                <div class="carousel-item text-center">
+                                    <img class="" src="assets/img/production.jpg" alt="Second slide">
                                 </div>
+                                <div class="carousel-item text-center">
+                                    <img class="" src="assets/img/production.jpg" alt="Third slide">
                                 </div>
+                            </div>
+                            <div class="carousel-control">
+                                <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+                                    <i class="fas fa-chevron-left"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+
+                                <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
-    
+        </div>
+
     </section>
     <div class="background-wave wave-top"></div>
     <section id="excursions">
-        
+
         <div class="part-1">
             <div class="container">
                 <div class="section-title mb-5">
@@ -422,56 +482,51 @@
                     </div>
                     <h1 class="bold">Экскурсии</h1>
                 </div>
-            <div class="row">
-                <div class="col-6">
-                <p>
-                    Приглашаем Вас погрузиться в захватывающее путешествие
-                    по столичной пивоварне «Наше пиво». 
-                    У вас появится уникальная возможность увидеть весь производственный
-                    процесс пива на заводе «Наше пиво». Во время экскурсии гостям
-                    разрешается пройтись по производственным помещениям, заглянуть
-                    в самое сердце завода, где варится, фильтруется, охлаждается
-                    и разливается пиво, ощутить приятный запах дрожжей, солода
-                    и уже готового к разливу продукта.  Каждый желающий может
-                    присоединиться к увлекательным экскурсиям!
-                </p>
-                <p>
-                    Здесь вам расскажут историю создания и развития предприятия с самого
-                    дня его основания до нашего времени, а также о технологии
-                    производства пива. В конце экскурсии Вас ждет дегустация всех сортов
-                    пива, которые производят на заводе «Наше пиво».
-                </p>
+                <div class="row">
+                    <div class="col-6">
+                        <p>
+                            Приглашаем Вас погрузиться в захватывающее путешествие по столичной пивоварне «Наше пиво». У вас появится уникальная возможность
+                            увидеть весь производственный процесс пива на заводе «Наше пиво». Во время экскурсии гостям разрешается
+                            пройтись по производственным помещениям, заглянуть в самое сердце завода, где варится, фильтруется,
+                            охлаждается и разливается пиво, ощутить приятный запах дрожжей, солода и уже готового к разливу
+                            продукта. Каждый желающий может присоединиться к увлекательным экскурсиям!
+                        </p>
+                        <p>
+                            Здесь вам расскажут историю создания и развития предприятия с самого дня его основания до нашего времени, а также о технологии
+                            производства пива. В конце экскурсии Вас ждет дегустация всех сортов пива, которые производят
+                            на заводе «Наше пиво».
+                        </p>
 
-                </div>
-                <div class="col-6">
+                    </div>
+                    <div class="col-6">
                         <div id="carousel3" class="carousel slide show-carousel" data-ride="carousel" style="height: 350px;">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item text-center active">
-                                        <img class="" src="assets/img/1.jpg" alt="First slide">
-                                    </div>
-                                    <div class="carousel-item text-center">
-                                        <img class="" src="assets/img/1.jpg" alt="Second slide">
-                                    </div>
-                                    <div class="carousel-item text-center">
-                                        <img class="" src="assets/img/1.jpg" alt="Third slide">
-                                    </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item text-center active">
+                                    <img class="" src="assets/img/1.jpg" alt="First slide">
                                 </div>
-                                <div class="carousel-control">
-                                    <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
-                                        <i class="fas fa-chevron-left"></i>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                        
-                                    <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next">
-                                        <i class="fas fa-chevron-right"></i>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                        
+                                <div class="carousel-item text-center">
+                                    <img class="" src="assets/img/1.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <img class="" src="assets/img/1.jpg" alt="Third slide">
                                 </div>
                             </div>
+                            <div class="carousel-control">
+                                <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
+                                    <i class="fas fa-chevron-left"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+
+                                <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
 
         <div class="background-wave wave-bottom"></div>
@@ -493,22 +548,33 @@
                 <div class="col-6">
                     <table>
                         <tr>
-                            <td><span class="bold">Адрес</span></td>
-                            <td><span>Приднестровская Молдавская республика,
-                                г. Тирасполь, Гребеницкий проезд 3а.</span></td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top"><span class="bold">Телефон</span></td>
                             <td>
-                                <span> +(373) 533 41570</span><br>
-                                <span>+(373) 533 44372</span><br>
-                                <span>+(373) 777 22247</span>
-                               
-</td>
+                                <span class="bold">Адрес</span>
+                            </td>
+                            <td>
+                                <span>Приднестровская Молдавская республика, г. Тирасполь, Гребеницкий проезд 3а.</span>
+                            </td>
                         </tr>
                         <tr>
-                            <td><span class="bold">Email</span></td>
-                            <td><span>chief@beer.sheriff.md</span></td>
+                            <td style="vertical-align: top">
+                                <span class="bold">Телефон</span>
+                            </td>
+                            <td>
+                                <span> +(373) 533 41570</span>
+                                <br>
+                                <span>+(373) 533 44372</span>
+                                <br>
+                                <span>+(373) 777 22247</span>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="bold">Email</span>
+                            </td>
+                            <td>
+                                <span>chief@beer.sheriff.md</span>
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -523,7 +589,7 @@
         <div class="background-wave wave-top"></div>
         <div class="footer">
             <div class="container">
-    
+
                 <div class="row align-items-center">
                     <div class="col-4 align-items-center">
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLive">
@@ -542,7 +608,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="row mt-5 mb-5">
                     <div class="col-12">
                         <ul class="nav justify-content-center">
@@ -561,16 +627,15 @@
                         </ul>
                     </div>
                 </div>
-    
+
                 <div class="row mt-5 mb-5">
                     <div class="col-12">
                         <span>
-                            ГОСТ 31711-2012. Товар сертифицирован. Товар соответствует СанПин М3 и С3 ПМР 2.3.2
-                            1078-2009.
+                            ГОСТ 31711-2012. Товар сертифицирован. Товар соответствует СанПин М3 и С3 ПМР 2.3.2 1078-2009.
                         </span>
                     </div>
                 </div>
-    
+
                 <div class="row mt-5">
                     <div class="col-12">
                         <p class="bold">ООО "Шериф"</p>

@@ -89,6 +89,24 @@ section {
     border: 0;
 }
 
+#product-carousel {
+    &.carousel {
+        position: unset;
+        width: 100%;
+    }
+
+    .carousel-inner {
+        position: unset;
+        width: unset;
+        overflow: unset;
+
+        .carousel-item {
+            img {
+                margin-top: 15px;
+            }
+        }
+    }
+}
 
 .background-wave {
     height: 350px;
@@ -134,13 +152,9 @@ section {
        
 
         .circles {
-            overflow: hidden;
-            margin-top: -300px;
-            margin-left: -150px; 
             
             .product-img {
                 height: 420px;
-                position: absolute;
                 top: 230px; 
                 left: 50%; 
                 transform: translate(-50%, -50%); 
@@ -195,6 +209,8 @@ section {
         }
 
         .more {
+            color: $black-color;
+            text-decoration: none;
             cursor: pointer;
 
             p {
