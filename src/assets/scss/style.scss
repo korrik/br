@@ -157,11 +157,14 @@ section {
                 height: 420px;
                 top: 230px; 
                 left: 50%; 
-                transform: translate(-50%, -50%); 
+                transform: translate(-50%, -50%);
+
+
             }
         }
 
         .circle {
+            margin-left: 15px;
             background-color: $bg-color;
             border-radius: 50%;
             position: absolute;
@@ -434,6 +437,12 @@ section {
         width: 100%;
         border-radius: 20px;
         margin: 20px 0;
+
+        div {
+            height: inherit;
+            margin-left: 15px;
+            padding-bottom: 15px;
+        }
     }
 }
 

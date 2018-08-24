@@ -119,6 +119,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%); }
   #main .intro .circle {
+    margin-left: 15px;
     background-color: #ffffff;
     border-radius: 50%;
     position: absolute;
@@ -291,6 +292,10 @@ section {
     width: 100%;
     border-radius: 20px;
     margin: 20px 0; }
+    .video-area .video-box div {
+      height: inherit;
+      margin-left: 15px;
+      padding-bottom: 15px; }
 
 .part-1 {
   background: #febe11; }
