@@ -361,3 +361,34 @@ footer .btn-primary {
   border-radius: 30px;
   color: #000;
   padding: 15px 35px; }
+  footer .btn-primary:hover {
+    background: #2e2e2e;
+    border-color: #2e2e2e; }
+
+footer .btn-primary:not(:disabled):not(.disabled):active, footer .btn-primary:not(:disabled):not(.disabled).active, footer .show > .btn-primary.dropdown-toggle {
+  background: #2e2e2e;
+  border-color: #2e2e2e; }
+
+footer .modal-content {
+  border: none;
+  border-radius: 20px; }
+  footer .modal-content .modal-header {
+    border-top: none; }
+  footer .modal-content .modal-footer {
+    display: unset;
+    border-top: none; }
+  footer .modal-content .btn-primary {
+    background: #febe11;
+    border: none;
+    padding: 15px 35px; }
+  footer .modal-content textarea {
+    resize: none;
+    border-radius: 20px;
+    border: 2px solid #ccc; }
+  footer .modal-content input[type="text"].form-control {
+    border: none;
+    border-bottom: 2px solid #febe11;
+    border-radius: 0;
+    padding: 15px 0; }
+  footer .modal-content .form-control:focus {
+    box-shadow: none; }

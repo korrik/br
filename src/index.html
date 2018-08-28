@@ -595,9 +595,46 @@
 
                 <div class="row align-items-center">
                     <div class="col-4 text-left">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLive">
-                            Задать вопрос
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">
+                            <span class="bold">Задать Вопрос</span>    
                         </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title bold" id="modalTitle">Задайте свой вопрос</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                       <p>Как к вам обращаться?</p>
+
+                                       <form>
+                                            <div class="form-row">
+                                              <div class="form-group col-md-6">
+                                                <input type="text" class="form-control" id="inputName" placeholder="Ваше имя">
+                                              </div>
+                                              <div class="form-group col-md-6">
+                                                <input type="text" class="form-control" id="inputPhone" placeholder="Ваш телефон для связи">
+                                              </div>
+                                            </div>
+                                            <div class="form-group mt-3">
+                                                <textarea placeholder="Ваш вопрос" class="form-control" id="textarea" rows="5"></textarea>
+                                            </div>
+                                          </form>
+
+
+                                    </div>
+                                    <div class="modal-footer text-center">
+                                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button> -->
+                                        <button type="button" class="btn btn-primary"><span class="bold">Отправить</span></button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
                     </div>
                     <div class="col-4">
                         <a class="navbar-brand logo" href="#">
