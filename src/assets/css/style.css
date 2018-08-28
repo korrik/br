@@ -254,7 +254,8 @@ section {
     #products .nav .nav-item {
       list-style: none;
       flex-grow: 1;
-      text-align: center; }
+      text-align: center;
+      margin: 25px 0; }
       #products .nav .nav-item .nav-link {
         display: unset;
         background: none;
@@ -271,6 +272,8 @@ section {
   #products .tab-content {
     max-width: 1200px;
     margin-top: 7rem; }
+    #products .tab-content img {
+      max-height: 500px; }
   #products .product-tabs {
     padding: 0;
     margin-left: -15px; }
@@ -286,6 +289,13 @@ section {
         background: #febe11; }
   #products .product-description p {
     margin-bottom: 0.5rem !important; }
+  @media (max-width: 575.98px) {
+    #products .tab-content {
+      margin-top: 1rem;
+      text-align: center; }
+      #products .tab-content img {
+        max-height: 350px;
+        margin-bottom: 20px; } }
 
 .factory {
   background: #febe11; }

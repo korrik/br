@@ -383,6 +383,8 @@ section {
             list-style: none;
             flex-grow: 1;
             text-align: center;
+            margin: 25px 0;
+
 
             .nav-link {
                 display: unset;
@@ -409,6 +411,10 @@ section {
     .tab-content {
         max-width: 1200px;
         margin-top: 7rem;
+
+        img {
+            max-height: 500px;
+        }
     }
 
     .product-tabs {
@@ -440,6 +446,19 @@ section {
         p  {
             margin-bottom: 0.5rem !important;
         }
+    }
+
+    @media (max-width: 575.98px) {
+        .tab-content {
+            margin-top: 1rem;
+            text-align: center;
+
+            img {
+                max-height: 350px;
+                margin-bottom: 20px;
+            }
+        }
+
     }
 }
 
