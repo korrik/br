@@ -207,30 +207,39 @@ section {
   .phone span:last-child {
     font-size: 14px; }
 
-.navbar a {
-  font-family: "Gilroy-ExtraBold"; }
-
-.navbar.main-nav {
+.main-nav {
   padding-right: 0;
   padding-left: 0; }
-  .navbar.main-nav.scrolled {
+  .main-nav.navbar a {
+    font-family: "Gilroy-ExtraBold"; }
+  .main-nav.navbar.scrolled {
     background: #febe11;
     box-shadow: 0 1px 5px 0;
     height: 75px;
     animation: slide-down 0.5s; }
-    .navbar.main-nav.scrolled .navbar-brand img {
+    .main-nav.navbar.scrolled .navbar-brand img {
       height: 55px; }
-
-@media (min-width: 1200px) {
-  .navbar ul.navbar-nav {
-    margin-left: 25px; } }
-
-@media (max-width: 575.98px) {
-  .navbar .logo img {
-    height: 75px !important; } }
-
-.navbar .logo img {
-  height: 85px; }
+  @media (min-width: 1200px) {
+    .main-nav.navbar ul.navbar-nav {
+      margin-left: 25px; } }
+  @media (max-width: 575.98px) {
+    .main-nav.navbar {
+      background: #febe11;
+      padding-bottom: 0;
+      padding: 5px 15px;
+      text-align: center; }
+      .main-nav.navbar .logo img {
+        height: 55px !important; }
+      .main-nav.navbar .navbar-toggler {
+        border: 0; }
+      .main-nav.navbar .phone {
+        text-align: center;
+        margin-top: 20px; }
+      .main-nav.navbar.scrolled {
+        height: unset;
+        box-shadow: 0px 1px 1px 0 #000; } }
+  .main-nav.navbar .logo img {
+    height: 85px; }
 
 #products {
   margin-top: -320px;
