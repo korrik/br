@@ -23,6 +23,9 @@
 
 div.de {
   margin-top: -400px; }
+  @media (max-width: 575.98px) {
+    div.de {
+      margin-top: -60px; } }
 
 .custom-control .custom-radio {
   cursor: pointer; }
@@ -97,6 +100,10 @@ section {
     background-image: url("../img/Layer.png"); }
   .background-wave.wave-top {
     background-image: url("../img/layer-top.png"); }
+
+@media (max-width: 575.98px) {
+  .background-wave {
+    height: 150px; } }
 
 @media (min-width: 1200px) {
   .container-fluid {
@@ -244,6 +251,9 @@ section {
 #products {
   margin-top: -320px;
   min-height: 500px; }
+  @media (max-width: 575.98px) {
+    #products {
+      margin-top: -120px; } }
   #products .nav {
     max-width: 1200px;
     width: 100%;
@@ -280,7 +290,7 @@ section {
     #products .product-tabs li {
       list-style: none;
       display: inline-block;
-      margin: 0 15px;
+      margin: 5px 15px;
       font-size: 18px; }
       #products .product-tabs li.active span::after {
         content: '';
@@ -311,6 +321,9 @@ section {
     width: 100%;
     border-radius: 20px;
     margin: 20px 0; }
+    @media (max-width: 575.98px) {
+      .video-area .video-box {
+        height: 200px; } }
     .video-area .video-box div {
       height: inherit;
       margin-left: 15px;
@@ -321,6 +334,9 @@ section {
 
 .image-slider-area {
   margin-top: -250px; }
+  @media (max-width: 575.98px) {
+    .image-slider-area {
+      margin-top: -50px; } }
 
 .carousel-control {
   position: absolute;
@@ -336,9 +352,18 @@ section {
     color: #2e2e2e;
     font-size: 32px; }
 
-.show-carousel img {
-  height: 300px;
-  border-radius: 20px; }
+.show-carousel {
+  height: 350px; }
+  @media (max-width: 575.98px) {
+    .show-carousel {
+      margin-top: 40px;
+      height: 250px; }
+      .show-carousel img {
+        height: 200px !important; } }
+  .show-carousel img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px; }
 
 .image-slider-area h2 {
   font-weight: 600; }
@@ -358,6 +383,9 @@ section {
 
 #contacts {
   margin-top: 90px; }
+  @media (max-width: 575.98px) {
+    #contacts {
+      margin-top: 0; } }
   #contacts table {
     width: 100%; }
     #contacts table tr td {
