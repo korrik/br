@@ -116,6 +116,18 @@ section {
   .container-fluid {
     padding: 0 75px; } }
 
+.height-control {
+  height: 75vh; }
+  @media (max-width: 575.98px) {
+    .height-control {
+      height: 60vh; } }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .height-control {
+      height: 95vh; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .height-control {
+      height: 40vh; } }
+
 #main {
   background-color: #febe11; }
   #main .intro h1 {
@@ -154,8 +166,6 @@ section {
     width: 850px;
     opacity: 0.05;
     z-index: 0; }
-  #main .intro .controls .carousel-control-next {
-    left: 85px; }
   #main .intro .controls .carousel-control-prev,
   #main .intro .controls .carousel-control-next {
     top: unset;
@@ -277,6 +287,9 @@ section {
   @media (max-width: 575.98px) {
     #products {
       margin-top: -120px; } }
+  @media (min-width: 576px) and (max-width: 991.98px) {
+    #products {
+      margin-top: -190px; } }
   #products .nav {
     max-width: 1200px;
     width: 100%;

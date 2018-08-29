@@ -51,22 +51,24 @@
             </div>
         </nav>
 
-        <div class="intro d-none">
-            <div class="container-fluid">
-                    <div id="product-carousel" class="carousel slide" data-ride="carousel">
-                <div class="d-flex align-items-center" style="height: 75vh">
-                    
 
+
+        <div class="intro">
+            <div class="container-fluid">
+                <div id="product-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="d-flex align-items-center height-control">
+        
+        
                         <div class="row" style="width: 100%">
-                            <div class="col-4">
+                            <div class="col-12 col-lg-4">
                                 <h1 class="bold">Небольшой
                                     <br>заголовок </h1>
                                 <h4 class="mt-4">Где говорится, какое вкусное пиво,
                                     <br>и как его варят с любовью</h4>
                             </div>
-                            <div class="col-4">
+                            <div class="col-12 col-lg-4 d-none d-lg-block">
                                 <div class="circles">
-
+        
                                     <div class="circle d-none d-sm-block">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
@@ -80,31 +82,31 @@
                                             </div>
                                         </div>
                                     </div>
-
-
+        
+        
                                     <div class="circle circle-2x d-none d-sm-block"></div>
                                     <div class="circle circle-3x d-none d-sm-block"></div>
-
+        
                                 </div>
                             </div>
-
-                            <div class="col-4">
-
-                                <div class="row">
+        
+                            <div class="col-12 col-lg-4">
+        
+                                <div class="row d-none d-lg-block text-right">
                                     <div class="col-12">
                                         <h2 class="bold"> Темное, 0.5 </h2>
                                         <h4 class="mt-1" style="text-decoration: underline">Узнать о производстве</h4>
                                     </div>
                                 </div>
-
-                                <div class="row">
-                                    <div class="col-12">
+        
+                                <div class="row text-right d-none d-lg-block">
+                                    <div class="col-4 offset-8">
                                         <div class="controls mt-5">
                                             <a class="carousel-control-prev" href="#product-carousel" role="button" data-slide="prev">
                                                 <i class="fas fa-chevron-left"></i>
                                                 <span class="sr-only">Previous</span>
                                             </a>
-
+        
                                             <a class="carousel-control-next" href="#product-carousel" role="button" data-slide="next">
                                                 <i class="fas fa-chevron-right"></i>
                                                 <span class="sr-only">Next</span>
@@ -112,64 +114,62 @@
                                         </div>
                                     </div>
                                 </div>
-
+        
                             </div>
-
+        
                         </div>
-
-
-                    
-                </div>
-
-                <div class="d-flex align-items-baseline justify-content-center">
-                    <div class="row" style="width: 100%;">
-                        <div class="col-4">
-                            <ol class="carousel-indicators text-left">
-                                <li class="active">
-                                    <span class="bold">1</span>
-                                </li>
-                                <li>
-                                    <span class="bold">2</span>
-                                </li>
-                                <li>
-                                    <span class="bold">3</span>
-                                </li>
-                            </ol>
-                        </div>
-                        <div class="col-4 text-center">
-                            <a href="#products" class="bold more">
-                                <p class="bold">Подробнее</p>
-                                <i class="fas fa-arrow-down"></i>
-                            </a>
-
-                        </div>
-                        <div class="col-4">
-                            <div class="card" style="margin-top: -200px; margin-left: -20px;">
-                                <div class="card-body">
-                                    <h4 class="card-title bold">Текст тематики голосования</h4>
-                                    <p class="card-text">
-                                        <div class="custom-controls-stacked">
-                                            <label class="custom-control custom-radio">
-                                                <input name="custom-radio-3" type="radio" class="custom-control-input" checked="">
-                                                <span class="custom-control-label">Раз</span>
-                                            </label>
-                                            <label class="custom-control custom-radio">
-                                                <input name="custom-radio-3" type="radio" class="custom-control-input">
-                                                <span class="custom-control-label">Два</span>
-                                            </label>
-                                            <label class="custom-control custom-radio">
-                                                <input name="custom-radio-3" type="radio" class="custom-control-input">
-                                                <span class="custom-control-label">Три</span>
-                                            </label>
-                                        </div>
-                                    </p>
+        
+                    </div>
+        
+                    <div class="d-flex align-items-lg-baseline justify-content-center">
+                        <div class="row w-100">
+                            <div class="col-4 d-none d-lg-block">
+                                <ol class="carousel-indicators text-left">
+                                    <li class="active">
+                                        <span class="bold">1</span>
+                                    </li>
+                                    <li>
+                                        <span class="bold">2</span>
+                                    </li>
+                                    <li>
+                                        <span class="bold">3</span>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="col-4 text-center d-none d-lg-block">
+                                <a href="#products" class="bold more">
+                                    <p class="bold">Подробнее</p>
+                                    <i class="fas fa-arrow-down"></i>
+                                </a>
+        
+                            </div>
+                            <div class="col-12 col-lg-4 d-xs-none" style="margin-top: -50px; padding-bottom: 25px;">
+                                <div class="card" >
+                                    <div class="card-body">
+                                        <h4 class="card-title bold">Текст тематики голосования</h4>
+                                        <p class="card-text">
+                                            <div class="custom-controls-stacked">
+                                                <label class="custom-control custom-radio">
+                                                    <input name="custom-radio-3" type="radio" class="custom-control-input" checked="">
+                                                    <span class="custom-control-label">Раз</span>
+                                                </label>
+                                                <label class="custom-control custom-radio">
+                                                    <input name="custom-radio-3" type="radio" class="custom-control-input">
+                                                    <span class="custom-control-label">Два</span>
+                                                </label>
+                                                <label class="custom-control custom-radio">
+                                                    <input name="custom-radio-3" type="radio" class="custom-control-input">
+                                                    <span class="custom-control-label">Три</span>
+                                                </label>
+                                            </div>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+        
                     </div>
-
                 </div>
-            </div>
             </div>
         </div>
 
